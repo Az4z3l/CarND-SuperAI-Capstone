@@ -1,7 +1,7 @@
 # Udacity Self-Driving Car Nanodegree: System Integration <!-- omit in toc -->
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive) <!-- omit in toc -->
 
-![Self Driving](./imgs/red_2_green.gif)
+![Self Driving](./imgs/test_lot.gif)
 
 Team **SuperAI** Members <!-- omit in toc -->
 ---
@@ -59,6 +59,8 @@ The node subscribes to 3 topics:
 With the information of the *current pose* and the *traffic lights* the node computes the distance to the closest traffic light and if within a reasonable range runs a **detection** on the whole image to establish the traffic light state (if any). If a traffic light is detected and its state is red the node publishes (topic **/traffic_waypoint**) the waypoint index at which the traffic light is detected.
 
 *Note: the simulator publishes the traffic light state, so in order to avoid running the real detector (e.g. for testing) is it possible to disable the detector, setting the value of the `use_light_state` to `True` in the [sim_traffic_light_config.yaml](./ros/src/tl_detector/sim_traffic_light_config.yaml) configuration file.*
+
+![Self Driving](./imgs/red_2_green.gif) 
 
 The [detector](./ros/src/tl_detector/light_classification/tl_classifier.py) uses [Tensorflow](https://tensorflow.org) to run a variant of a [Single Shot MultiBox Detector](https://arxiv.org/abs/1512.02325) that uses as feature extractor [MobileNetV2](https://arxiv.org/abs/1801.04381). The model weights used by the included graph are pre-trained on the [COCO Dataset](http://cocodataset.org) that already contains the traffic light category and provided by the [Tensorflow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection).
 
@@ -177,7 +179,7 @@ To install multiple versions of Ubuntu (in case you already have a different ver
 
 1. Clone the project repository
     ```bash
-    git clone https://github.com/aviralksingh/CarND-SuperAI-Capstone.git
+    git clone https://github.com/marcomarasca/CarND-SuperAI-Capstone.git
     ```
 
 2. Install python dependencies
