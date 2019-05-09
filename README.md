@@ -7,7 +7,7 @@ Team **SuperAI** Members <!-- omit in toc -->
 ---
 
 * [Aviral Singh](https://github.com/aviralksingh) (aviralksingh@gmail.com)
-* [Marco Marasca](https://github.com/Az4z3l) (marascamarco@gmail.com)
+* [Marco Marasca](https://github.com/marcomarasca) (marascamarco@gmail.com)
 * [Thomas Brakel](https://github.com/TBrakel77) (twbrakel@gmail.com)
 * [Bilal Elsheemy](https://github.com/bilalelsheemy) (belaalelsheemy93@gmail.com)
 * [Chuqiao Dong](https://github.com/chd415) (chd415@lehigh.edu)
@@ -45,7 +45,7 @@ Among the components depicted in the picture above, the team focused on the impl
 ROS Nodes
 ---
 
-### [Traffic Light Detection](https://github.com/Az4z3l/CarND-Traffic-Light-Detection)
+### [Traffic Light Detection](https://github.com/marcomarasca/CarND-Traffic-Light-Detection)
 
 The [traffic light detection node](./ros/src/tl_detector) is in charge of the part of the perception sub-system that needs to detect incoming traffic lights and their state. In this simple implementation the detector computes the position (in term of waypoint index) of the upcoming traffic light if its state is currently detected as a red light, so that the [waypoint updater](#waypoint-updater) can take the upcoming red light in generating a trajectory.
 
@@ -68,7 +68,7 @@ The model was fine-tuned for the task at end using labelled images from various 
 
 The images used for training were labelled semi-automatically first running a pre-trained high accuracy object detection model ([Faster RCNN](https://arxiv.org/abs/1506.01497)) and then manually validated using [LabelImg](https://github.com/tzutalin/labelImg). The final dataset used for both training, validation and testing can be downloaded from [here](https://drive.google.com/open?id=1NXqHTnjVC1tPjAB5DajGc30uWk5VPy7C).
 
-Various models were fine-tuned and tested, for more details about the whole process and the evaluation results see the dedicated [Traffic Light Detection Repository](https://github.com/Az4z3l/CarND-Traffic-Light-Detection).
+Various models were fine-tuned and tested, for more details about the whole process and the evaluation results see the dedicated [Traffic Light Detection Repository](https://github.com/marcomarasca/CarND-Traffic-Light-Detection).
 
 ![Detection Result](./imgs/detection_result.jpg)
 
