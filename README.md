@@ -13,17 +13,17 @@ Team **SuperAI** Members <!-- omit in toc -->
 * [Chuqiao Dong](https://github.com/chd415) (chd415@lehigh.edu)
 
 ## Table of Contents <!-- omit in toc -->
-- [Overview](#overview)
-- [ROS Nodes](#ros-nodes)
-  - [Traffic Light Detection](#traffic-light-detection)
-  - [Waypoint Updater](#waypoint-updater)
-  - [Drive by Wire Controller](#drive-by-wire-controller)
-- [Getting Started](#getting-started)
-  - [Native Installation](#native-installation)
-  - [VM Installation](#vm-installation)
-  - [Docker Installation](#docker-installation)
-  - [WSL Installation](#wsl-installation)
-  - [Running the Project](#running-the-project)
+- [Overview](#Overview)
+- [ROS Nodes](#ROS-Nodes)
+  - [Traffic Light Detection](#Traffic-Light-Detection)
+  - [Waypoint Updater](#Waypoint-Updater)
+  - [Drive by Wire Controller](#Drive-by-Wire-Controller)
+- [Getting Started](#Getting-Started)
+  - [Native Installation](#Native-Installation)
+  - [VM Installation](#VM-Installation)
+  - [Docker Installation](#Docker-Installation)
+  - [WSL Installation](#WSL-Installation)
+  - [Running the Project](#Running-the-Project)
 
 Overview
 ---
@@ -45,7 +45,7 @@ Among the components depicted in the picture above, the team focused on the impl
 ROS Nodes
 ---
 
-### [Traffic Light Detection](https://github.com/marcomarasca/CarND-Traffic-Light-Detection)
+### [Traffic Light Detection](https://github.com/marcomarasca/SDCND-Traffic-Light-Detection)
 
 The [traffic light detection node](./ros/src/tl_detector) is in charge of the part of the perception sub-system that needs to detect incoming traffic lights and their state. In this simple implementation the detector computes the position (in term of waypoint index) of the upcoming traffic light if its state is currently detected as a red light, so that the [waypoint updater](#waypoint-updater) can take the upcoming red light in generating a trajectory.
 
@@ -70,7 +70,7 @@ The model was fine-tuned for the task at end using labelled images from various 
 
 The images used for training were labelled semi-automatically first running a pre-trained high accuracy object detection model ([Faster RCNN](https://arxiv.org/abs/1506.01497)) and then manually validated using [LabelImg](https://github.com/tzutalin/labelImg). The final dataset used for both training, validation and testing can be downloaded from [here](https://drive.google.com/open?id=1NXqHTnjVC1tPjAB5DajGc30uWk5VPy7C).
 
-Various models were fine-tuned and tested, for more details about the whole process and the evaluation results see the dedicated [Traffic Light Detection Repository](https://github.com/marcomarasca/CarND-Traffic-Light-Detection).
+Various models were fine-tuned and tested, for more details about the whole process and the evaluation results see the dedicated [Traffic Light Detection Repository](https://github.com/marcomarasca/SDCND-Traffic-Light-Detection).
 
 ![Detection Result](./imgs/detection_result.jpg)
 
@@ -179,7 +179,7 @@ To install multiple versions of Ubuntu (in case you already have a different ver
 
 1. Clone the project repository
     ```bash
-    git clone https://github.com/marcomarasca/CarND-SuperAI-Capstone.git
+    git clone https://github.com/marcomarasca/SDCND-SuperAI-Capstone.git
     ```
 
 2. Install python dependencies

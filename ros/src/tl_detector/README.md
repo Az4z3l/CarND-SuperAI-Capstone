@@ -7,7 +7,7 @@ a message is published on the `/traffic_waypoint` topic.
 The approach taken for this task is to train a neural network for object detection using each light state as a different class, in
 this way the classification task is reduced into the same network.
 
-The documentation and code used for training can be found [here](https://github.com/marcomarasca/CarND-Traffic-Light-Detection).
+The documentation and code used for training can be found [here](https://github.com/marcomarasca/SDCND-Traffic-Light-Detection).
 
 The data for training was collected from both the simulator, recording a bag and then saving the camera images and from a bag provided by udacity that can be downloaded from [here](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic_light_bag_file.zip).
 
